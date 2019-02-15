@@ -5,10 +5,10 @@
 # 安装
 
 	// npm
-	npm install -g mife-tool
+	npm install -g mife-cli
 
 	// yarn
-	yarn global add mife-tool
+	yarn global add mife-cli
 
 # 用法
 

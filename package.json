@@ -1,14 +1,35 @@
 {
   "name": "mife-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "mife cli",
+  "main": "index.js",
   "bin": {
-    "mife": "./bin/mife.js"
+    "mife-cli": "./bin/mife"
   },
-  "dependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsqaisen/mife-cli.git"
+  },
+  "keywords": [
+    "mife",
+    "mife-cli",
+    "micro-frontend"
+  ],
+  "author": "dzfrontend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsqaisen/mife-cli/issues"
+  },
+  "homepage": "https://github.com/lsqaisen/mife-cli#readme",
   "devDependencies": {
     "chalk": "^2.4.2",
-    "commander": "^2.19.0",
+    "mifeer": "^2.19.0",
     "download-git-repo": "^1.1.0",
     "fs": "^0.0.1-security",
     "glob": "^7.1.3",
