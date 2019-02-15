@@ -1,6 +1,6 @@
 {
   "name": "mife-cli",
-  "version": "1.0.202",
+  "version": "1.0.203",
   "description": "mife cli",
   "main": "index.js",
   "bin": {
@@ -21,13 +21,13 @@
     "mife-cli",
     "micro-frontend"
   ],
-  "author": "dzfrontend",
+  "author": "lsqasien",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lsqaisen/mife-cli/issues"
   },
   "homepage": "https://github.com/lsqaisen/mife-cli#readme",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.4.2",
     "download-git-repo": "^1.1.0",
     "fs": "^0.0.1-security",
