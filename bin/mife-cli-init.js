@@ -75,7 +75,7 @@ function go() {
         })
         .then(res => {
           console.log(logSymbols.success, chalk.green('found success:)'))
-          console.log(chalk.green('cd ' + res.dest + '\nnpm install\nnpm run dev'))
+          console.log(chalk.green('cd ' + res.dest + '\nnpm install\nnpm run start/build'))
         })
         .catch(error => {
           console.error(logSymbols.error, chalk.red(`found faild：${error.message}`))

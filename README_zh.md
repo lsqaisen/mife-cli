@@ -13,13 +13,13 @@
 # 用法
 
 	// default template demo
-	mife init <project-name>
+	mife-cli init <project-name>
 
 # 用例
 
 此示例将从默认的url下载模板，项目名称是my-template
 
-	mife init my-template
+	mife-cli init my-template
 
 # 脚手架工具能做什么？
 

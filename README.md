@@ -16,13 +16,13 @@
 # Usage
 
 	// default template demo
-	mife init <project-name>
+	mife-cli init <project-name>
 
 # Example
 
 this example will download template from default url, the project name is my-temptele
 
-	mife init my-template
+	mife-cli init my-template
 
 # What can scaffolding tool do?
 
