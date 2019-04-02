@@ -1,6 +1,6 @@
 {
   "name": "mife-cli",
-  "version": "1.0.204",
+  "version": "1.0.3",
   "description": "mife cli",
   "main": "index.js",
   "bin": {
