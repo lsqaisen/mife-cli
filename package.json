@@ -1,10 +1,10 @@
 {
   "name": "mife-cli",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "mife cli",
-  "main": "index.js",
   "bin": {
-    "mife-cli": "./bin/mife-cli.js"
+    "mife-cli": "bin/mife-cli.js",
+    "mife-cli-init": "bin/mife-cli-init.js"
   },
   "directories": {
     "lib": "lib"
