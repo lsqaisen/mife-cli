@@ -1,6 +1,6 @@
 {
   "name": "mife-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "mife cli",
   "bin": {
     "mife-cli": "bin/mife-cli.js",
