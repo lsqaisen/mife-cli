@@ -59,8 +59,9 @@ function go() {
   next.then(projectName => {
     if (projectName !== '.') {
       fs.mkdirSync(projectName)
-      const url = program.repository ? program.repository : 'lsqaisen/mife-demo.git#master'
-      download(url, projectName)
+      const url = program.repository ? program.repository : 'lsqaisen/mife-demo.git#master';
+      const target = path.join(projectName || '.', projectName)
+      download(url, target)
         .then(target => {
           return {
             name: projectName,
@@ -75,7 +76,6 @@ function go() {
         })
         .then(res => {
           console.log(logSymbols.success, chalk.green('found success:)'))
-          console.log(chalk.green('cd ' + res.dest + '\nnpm install\nnpm run start/build'))
         })
         .catch(error => {
           console.error(logSymbols.error, chalk.red(`found faild：${error.message}`))
