@@ -4,7 +4,6 @@ const program = require('commander');
 const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
-const inquirer = require('inquirer');
 const chalk = require('chalk');
 const logSymbols = require('log-symbols');
 const download = require('../lib/download');
@@ -17,7 +16,6 @@ program.usage('<project-name>')
 let projectName = 'global';
 
 const list = glob.sync('*/**/src/components');
-console.log(list)
 let next = undefined
 
 const deleteFolderRecursive = function (path) {

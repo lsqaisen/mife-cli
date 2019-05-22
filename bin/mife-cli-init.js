@@ -5,7 +5,6 @@ const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
 const inquirer = require('inquirer');
-const latestVersion = require('latest-version');
 const chalk = require('chalk');
 const logSymbols = require('log-symbols');
 const download = require('../lib/download');
