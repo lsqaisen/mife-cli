@@ -15,7 +15,7 @@ program.usage('<project-name>')
 
 let projectName = 'global';
 
-const list = glob.sync('*/**/src/components');
+const list = glob.sync('**/src/components', { ignore: ['**/node_modules/**/src/components'] });
 let next = undefined
 
 const deleteFolderRecursive = function (path) {
@@ -34,7 +34,7 @@ const deleteFolderRecursive = function (path) {
   }
 };
 
-if (list.length) {
+if (list.length > 0) {
   let global_src = `./${list[0]}/${projectName}`;
   const hasGlobal = glob.sync(global_src)[0];
   if (hasGlobal) {
@@ -42,8 +42,7 @@ if (list.length) {
   }
   next = Promise.resolve(global_src)
 } else {
-  next = Promise.resolve
-    (`./src/components/${projectName}`)
+  next = Promise.resolve(`./src/components/${projectName}`)
 }
 
 go()
@@ -51,7 +50,6 @@ go()
 function go() {
   next.then(projectName => {
     if (projectName !== '.') {
-      fs.mkdirSync(projectName)
       const url = program.repository ? program.repository : 'lsqaisen/mife-library.git#master';
       const target = path.join('.', `${projectName}/cache`)
       download(url, target, `update mife-library to ${projectName}`)
